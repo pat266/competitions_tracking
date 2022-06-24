@@ -1,0 +1,16 @@
+repos:
+  # I like this, but it doesn't like the globals in gamelib/
+  # - repo: https://github.com/bwhmather/ssort
+  # rev: v0.10.2
+  # hooks:
+  # - id: ssort
+- repo: https://github.com/pycqa/isort
+  rev: 5.10.1
+  hooks:
+  - id: isort
+    name: isort (python)
+    args: [--profile=black]
+- repo: https://github.com/psf/black
+  rev: 22.3.0
+  hooks:
+  - id: black
