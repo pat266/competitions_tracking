@@ -1,0 +1,290 @@
+[
+  {
+    "algo_id": 238427,
+    "algo_name": "Firestarter2",
+    "algo_rating": 2326,
+    "games_played": 17,
+    "win_percentage": 100.0,
+    "creator": "Team: Alphago-Terminal",
+    "algo_link": "https://bcverdict.github.io/?id=238427"
+  },
+  {
+    "algo_id": 239832,
+    "algo_name": "kummm",
+    "algo_rating": 2182,
+    "games_played": 15,
+    "win_percentage": 80.0,
+    "creator": "User: lunw",
+    "algo_link": "https://bcverdict.github.io/?id=239832"
+  },
+  {
+    "algo_id": 237840,
+    "algo_name": "algoStrategy",
+    "algo_rating": 2177,
+    "games_played": 47,
+    "win_percentage": 72.34,
+    "creator": "Team: the economists",
+    "algo_link": "https://bcverdict.github.io/?id=237840"
+  },
+  {
+    "algo_id": 239073,
+    "algo_name": "siege-v0",
+    "algo_rating": 2142,
+    "games_played": 23,
+    "win_percentage": 73.91,
+    "creator": "Team: Evo",
+    "algo_link": "https://bcverdict.github.io/?id=239073"
+  },
+  {
+    "algo_id": 239355,
+    "algo_name": "stop-feeding3",
+    "algo_rating": 2118,
+    "games_played": 17,
+    "win_percentage": 82.35,
+    "creator": "Team: The Eleemosynary Engineers",
+    "algo_link": "https://bcverdict.github.io/?id=239355"
+  },
+  {
+    "algo_id": 239209,
+    "algo_name": "Gladiator",
+    "algo_rating": 2102,
+    "games_played": 19,
+    "win_percentage": 68.42,
+    "creator": "Team: WATERMELONS ARe ROUND",
+    "algo_link": "https://bcverdict.github.io/?id=239209"
+  },
+  {
+    "algo_id": 239939,
+    "algo_name": "switch-two",
+    "algo_rating": 2078,
+    "games_played": 12,
+    "win_percentage": 91.67,
+    "creator": "Team: mi7",
+    "algo_link": "https://bcverdict.github.io/?id=239939"
+  },
+  {
+    "algo_id": 239621,
+    "algo_name": "rossa-three-a",
+    "algo_rating": 2059,
+    "games_played": 16,
+    "win_percentage": 75.0,
+    "creator": "Team: mi7",
+    "algo_link": "https://bcverdict.github.io/?id=239621"
+  },
+  {
+    "algo_id": 239433,
+    "algo_name": "3-new",
+    "algo_rating": 2018,
+    "games_played": 17,
+    "win_percentage": 64.71,
+    "creator": "User: cxxfish",
+    "algo_link": "https://bcverdict.github.io/?id=239433"
+  },
+  {
+    "algo_id": 238709,
+    "algo_name": "wide-funnel",
+    "algo_rating": 1953,
+    "games_played": 44,
+    "win_percentage": 54.55,
+    "creator": "Team: buy-the-dip",
+    "algo_link": "https://bcverdict.github.io/?id=238709"
+  },
+  {
+    "algo_id": 238588,
+    "algo_name": "dm-copy",
+    "algo_rating": 1890,
+    "games_played": 38,
+    "win_percentage": 42.11,
+    "creator": "Team: ramen2",
+    "algo_link": "https://bcverdict.github.io/?id=238588"
+  },
+  {
+    "algo_id": 238267,
+    "algo_name": "dm-copy",
+    "algo_rating": 1880,
+    "games_played": 58,
+    "win_percentage": 46.55,
+    "creator": "User: Dluo",
+    "algo_link": "https://bcverdict.github.io/?id=238267"
+  },
+  {
+    "algo_id": 239740,
+    "algo_name": "Fire-dirty",
+    "algo_rating": 1849,
+    "games_played": 14,
+    "win_percentage": 78.57,
+    "creator": "Team: Rabbids",
+    "algo_link": "https://bcverdict.github.io/?id=239740"
+  },
+  {
+    "algo_id": 238249,
+    "algo_name": "starting_panda",
+    "algo_rating": 1820,
+    "games_played": 44,
+    "win_percentage": 59.09,
+    "creator": "Team: Mighty Pandas",
+    "algo_link": "https://bcverdict.github.io/?id=238249"
+  },
+  {
+    "algo_id": 238555,
+    "algo_name": "overpass",
+    "algo_rating": 1816,
+    "games_played": 34,
+    "win_percentage": 52.94,
+    "creator": "User: jiuyangzh",
+    "algo_link": "https://bcverdict.github.io/?id=238555"
+  },
+  {
+    "algo_id": 237627,
+    "algo_name": "Hopium5",
+    "algo_rating": 1772,
+    "games_played": 103,
+    "win_percentage": 52.43,
+    "creator": "User: Jon",
+    "algo_link": "https://bcverdict.github.io/?id=237627"
+  },
+  {
+    "algo_id": 238158,
+    "algo_name": "Staunton3",
+    "algo_rating": 1771,
+    "games_played": 57,
+    "win_percentage": 38.6,
+    "creator": "User: Andrew BRIAND",
+    "algo_link": "https://bcverdict.github.io/?id=238158"
+  },
+  {
+    "algo_id": 239103,
+    "algo_name": "3-new",
+    "algo_rating": 1747,
+    "games_played": 36,
+    "win_percentage": 47.22,
+    "creator": "Team: silence.fortune.Hunter",
+    "algo_link": "https://bcverdict.github.io/?id=239103"
+  },
+  {
+    "algo_id": 238995,
+    "algo_name": "NX-00",
+    "algo_rating": 1727,
+    "games_played": 28,
+    "win_percentage": 57.14,
+    "creator": "Team: APEX",
+    "algo_link": "https://bcverdict.github.io/?id=238995"
+  },
+  {
+    "algo_id": 239348,
+    "algo_name": "janna_v2",
+    "algo_rating": 1705,
+    "games_played": 18,
+    "win_percentage": 66.67,
+    "creator": "Team: RIVER KINGs",
+    "algo_link": "https://bcverdict.github.io/?id=239348"
+  },
+  {
+    "algo_id": 238065,
+    "algo_name": "CS101 v1",
+    "algo_rating": 1700,
+    "games_played": 82,
+    "win_percentage": 54.88,
+    "creator": "User: YL01",
+    "algo_link": "https://bcverdict.github.io/?id=238065"
+  },
+  {
+    "algo_id": 239126,
+    "algo_name": "baked-potato",
+    "algo_rating": 1677,
+    "games_played": 27,
+    "win_percentage": 37.04,
+    "creator": "Team: The WhaleSharks",
+    "algo_link": "https://bcverdict.github.io/?id=239126"
+  },
+  {
+    "algo_id": 238355,
+    "algo_name": "R5_RULER_v2",
+    "algo_rating": 1622,
+    "games_played": 36,
+    "win_percentage": 44.44,
+    "creator": "User: Nicholas H",
+    "algo_link": "https://bcverdict.github.io/?id=238355"
+  },
+  {
+    "algo_id": 237847,
+    "algo_name": "Good_Luck_Old",
+    "algo_rating": 1597,
+    "games_played": 74,
+    "win_percentage": 45.95,
+    "creator": "Team: Gloubi-Boulga",
+    "algo_link": "https://bcverdict.github.io/?id=237847"
+  },
+  {
+    "algo_id": 238857,
+    "algo_name": "SD",
+    "algo_rating": 1579,
+    "games_played": 15,
+    "win_percentage": 53.33,
+    "creator": "User: John",
+    "algo_link": "https://bcverdict.github.io/?id=238857"
+  },
+  {
+    "algo_id": 239937,
+    "algo_name": "python-algo",
+    "algo_rating": 1577,
+    "games_played": 6,
+    "win_percentage": 50.0,
+    "creator": "User: notAsh",
+    "algo_link": "https://bcverdict.github.io/?id=239937"
+  },
+  {
+    "algo_id": 239869,
+    "algo_name": "monke_v3",
+    "algo_rating": 1562,
+    "games_played": 11,
+    "win_percentage": 72.73,
+    "creator": "Team: sarma",
+    "algo_link": "https://bcverdict.github.io/?id=239869"
+  },
+  {
+    "algo_id": 237989,
+    "algo_name": "fort",
+    "algo_rating": 1554,
+    "games_played": 53,
+    "win_percentage": 54.72,
+    "creator": "User: eh270",
+    "algo_link": "https://bcverdict.github.io/?id=237989"
+  },
+  {
+    "algo_id": 238239,
+    "algo_name": "Page2",
+    "algo_rating": 1491,
+    "games_played": 87,
+    "win_percentage": 52.87,
+    "creator": "Team: Lying flat",
+    "algo_link": "https://bcverdict.github.io/?id=238239"
+  },
+  {
+    "algo_id": 239603,
+    "algo_name": "python-algo",
+    "algo_rating": 1440,
+    "games_played": 17,
+    "win_percentage": 64.71,
+    "creator": "User: Mik",
+    "algo_link": "https://bcverdict.github.io/?id=239603"
+  },
+  {
+    "algo_id": 238849,
+    "algo_name": "python-rebuildv2",
+    "algo_rating": 1428,
+    "games_played": 36,
+    "win_percentage": 55.56,
+    "creator": "User: ArtCarp",
+    "algo_link": "https://bcverdict.github.io/?id=238849"
+  },
+  {
+    "algo_id": 238691,
+    "algo_name": "1M-row-qtable",
+    "algo_rating": 1370,
+    "games_played": 11,
+    "win_percentage": 45.45,
+    "creator": "User: errieta",
+    "algo_link": "https://bcverdict.github.io/?id=238691"
+  }
+]
