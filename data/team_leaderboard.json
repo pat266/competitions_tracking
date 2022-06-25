@@ -9,6 +9,15 @@
     "algo_link": "https://bcverdict.github.io/?id=238427"
   },
   {
+    "algo_id": 239804,
+    "algo_name": "Firestarter4",
+    "algo_rating": 2290,
+    "games_played": 16,
+    "win_percentage": 93.75,
+    "creator": "Team: Alphago-Terminal",
+    "algo_link": "https://bcverdict.github.io/?id=239804"
+  },
+  {
     "algo_id": 237840,
     "algo_name": "algoStrategy",
     "algo_rating": 2190,
@@ -297,6 +306,15 @@
     "algo_link": "https://bcverdict.github.io/?id=237989"
   },
   {
+    "algo_id": 238239,
+    "algo_name": "Page2",
+    "algo_rating": 1466,
+    "games_played": 95,
+    "win_percentage": 51.58,
+    "creator": "Team: Lying flat",
+    "algo_link": "https://bcverdict.github.io/?id=238239"
+  },
+  {
     "algo_id": 239426,
     "algo_name": "python-algo2",
     "algo_rating": 1460,
@@ -304,15 +322,6 @@
     "win_percentage": 50.0,
     "creator": "User: Mik",
     "algo_link": "https://bcverdict.github.io/?id=239426"
-  },
-  {
-    "algo_id": 238239,
-    "algo_name": "Page2",
-    "algo_rating": 1458,
-    "games_played": 94,
-    "win_percentage": 51.06,
-    "creator": "Team: Lying flat",
-    "algo_link": "https://bcverdict.github.io/?id=238239"
   },
   {
     "algo_id": 238849,

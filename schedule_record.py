@@ -126,11 +126,11 @@ class ScheduleRecord:
 
 if __name__ == "__main__":
     schedule_record = ScheduleRecord()
-    schedule_record.schedule_get_algorithms_competition()
-    # schedule.every(5).minutes.do(schedule_record.schedule_get_algorithms_competition)
-    # while True:
-    #     try:
-    #         schedule.run_pending()
-    #     except Exception:
-    #         print('Scheduler failed')
-    #     time.sleep(1)
+    # schedule_record.schedule_get_algorithms_competition()
+    schedule.every(3).minutes.do(schedule_record.schedule_get_algorithms_competition)
+    while True:
+        try:
+            schedule.run_pending()
+        except Exception:
+            schedule.logger.error(Exception)
+        time.sleep(1)
