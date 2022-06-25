@@ -1,3 +1,4 @@
+import logging
 import os
 import time
 
@@ -23,59 +24,104 @@ class ScheduleRecord:
         # change this to get the information of a different competition
         self.competitionId = 297
 
-    def trigger_testsuite(self):
-        print("I am working as expected.")
+        # delete the log file if it exists
+        if os.path.exists("./log.log"):
+            os.remove("./log.log")
+
+        # logging information
+        self.logger = logging.getLogger()
+        self.logger.setLevel(logging.DEBUG)  # or whatever
+        handler = logging.FileHandler("log.log", "w", "utf-8")  # or whatever
+        handler.setFormatter(
+            logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+        )  # or whatever
+        self.logger.addHandler(handler)
+
+        # change the level of some library to stop the unnecessary information
+        logging.getLogger("requests").setLevel(logging.CRITICAL)
+        logging.getLogger("urllib3").setLevel(logging.CRITICAL)
 
     def schedule_get_algorithms_competition(self):
-        """
-        These methods are used to get the team highest elo algorithm
-        """
-        # get the current algorithms leaderboard from different teams
-        new_team_leaderboard = tracker.get_team_leaderboard(
-            competitionId=self.competitionId
-        )
-        new_team_leaderboard = tracker.sort_algos_dict(new_team_leaderboard)
+        try:
+            """
+            These methods are used to get the team highest elo algorithm
+            """
+            # log the updated time
+            self.logger.info("Retrieving and updating the algorithms information.")
+            # var for time before
+            before = time.perf_counter()
+            # get the current algorithms leaderboard from different teams
+            new_team_leaderboard = tracker.get_team_leaderboard(
+                competitionId=self.competitionId
+            )
+            new_team_leaderboard = tracker.sort_algos_dict(new_team_leaderboard)
 
-        # check if there is a file available
-        if os.path.exists(os.path.join(self.dir_path, self.team_file_name + ".json")):
-            old_team_leaderboard = tracker.import_algos(
-                self.dir_path, self.team_file_name
+            # check if there is a file available
+            if os.path.exists(
+                os.path.join(self.dir_path, self.team_file_name + ".json")
+            ):
+                old_team_leaderboard = tracker.import_algos(
+                    self.dir_path, self.team_file_name
+                )
+                # update the old team leaderboard with the new one
+                new_team_leaderboard = tracker.update_algos_dict(
+                    old_team_leaderboard, new_team_leaderboard
+                )
+            # sort it by elo
+            new_team_leaderboard = tracker.sort_algos_dict(
+                new_team_leaderboard, key="algo_rating"
             )
-            # update the old team leaderboard with the new one
-            new_team_leaderboard = tracker.update_algos_dict(
-                old_team_leaderboard, new_team_leaderboard
+            # save it back to its location
+            tracker.export_algos(
+                new_team_leaderboard, self.dir_path, self.team_file_name
             )
-        # sort it by elo
-        new_team_leaderboard = tracker.sort_algos_dict(
-            new_team_leaderboard, key="algo_rating"
-        )
-        # save it back to its location
-        tracker.export_algos(new_team_leaderboard, self.dir_path, self.team_file_name)
+            # var for time after
+            after = time.perf_counter()
+            self.logger.info(
+                "Retrieved and saved the team leaderboard in {} seconds".format(
+                    after - before
+                )
+            )
+            """
+            These methods are used to get the team highest elo algorithm
+            """
+            # var for time before
+            before = time.perf_counter()
+            # get the current algorithms leaderboard from different teams
+            new_algos_leaderboard = tracker.get_competition_algorithms(
+                competitionId=self.competitionId
+            )
+            new_algos_leaderboard = tracker.sort_algos_dict(new_algos_leaderboard)
 
-        """
-        These methods are used to get the team highest elo algorithm
-        """
-        # get the current algorithms leaderboard from different teams
-        new_algos_leaderboard = tracker.get_competition_algorithms(
-            competitionId=self.competitionId
-        )
-        new_algos_leaderboard = tracker.sort_algos_dict(new_algos_leaderboard)
+            # check if there is a file available
+            if os.path.exists(
+                os.path.join(self.dir_path, self.algos_file_name + ".json")
+            ):
+                old_algos_leaderboard = tracker.import_algos(
+                    self.dir_path, self.algos_file_name
+                )
+                # update the old team leaderboard with the new one
+                new_algos_leaderboard = tracker.update_algos_dict(
+                    old_algos_leaderboard, new_algos_leaderboard
+                )
+            # sort it by elo
+            new_algos_leaderboard = tracker.sort_algos_dict(
+                new_algos_leaderboard, key="algo_rating"
+            )
+            # save it back to its location
+            tracker.export_algos(
+                new_algos_leaderboard, self.dir_path, self.algos_file_name
+            )
 
-        # check if there is a file available
-        if os.path.exists(os.path.join(self.dir_path, self.algos_file_name + ".json")):
-            old_algos_leaderboard = tracker.import_algos(
-                self.dir_path, self.algos_file_name
+            # var for time after
+            after = time.perf_counter()
+            self.logger.info(
+                "Retrieved and saved the algorithms leaderboard in {} seconds".format(
+                    after - before
+                )
             )
-            # update the old team leaderboard with the new one
-            new_algos_leaderboard = tracker.update_algos_dict(
-                old_algos_leaderboard, new_algos_leaderboard
-            )
-        # sort it by elo
-        new_algos_leaderboard = tracker.sort_algos_dict(
-            new_algos_leaderboard, key="algo_rating"
-        )
-        # save it back to its location
-        tracker.export_algos(new_algos_leaderboard, self.dir_path, self.algos_file_name)
+        except Exception:
+            self.logger.error(Exception)
 
 
 if __name__ == "__main__":
@@ -85,7 +131,6 @@ if __name__ == "__main__":
     # while True:
     #     try:
     #         schedule.run_pending()
-    #         schedule_record.trigger_testsuite()
     #     except Exception:
     #         print('Scheduler failed')
     #     time.sleep(1)
