@@ -29,9 +29,9 @@
   {
     "algo_id": 220956,
     "algo_name": "python-algo",
-    "algo_rating": 2833,
-    "games_played": 1310,
-    "win_percentage": 86.95,
+    "algo_rating": 2836,
+    "games_played": 1311,
+    "win_percentage": 86.96,
     "creator": "User: jake Will",
     "algo_link": "https://bcverdict.github.io/?id=220956"
   },
@@ -65,27 +65,27 @@
   {
     "algo_id": 243462,
     "algo_name": "purple-four",
-    "algo_rating": 2591,
-    "games_played": 633,
-    "win_percentage": 76.46,
+    "algo_rating": 2593,
+    "games_played": 634,
+    "win_percentage": 76.5,
     "creator": "User: agave margarita",
     "algo_link": "https://bcverdict.github.io/?id=243462"
   },
   {
     "algo_id": 220823,
     "algo_name": "buy-the-dip-2",
-    "algo_rating": 2564,
-    "games_played": 1476,
-    "win_percentage": 80.89,
+    "algo_rating": 2567,
+    "games_played": 1477,
+    "win_percentage": 80.91,
     "creator": "User: kfu02",
     "algo_link": "https://bcverdict.github.io/?id=220823"
   },
   {
     "algo_id": 234436,
     "algo_name": "lobster_f",
-    "algo_rating": 2528,
-    "games_played": 931,
-    "win_percentage": 80.24,
+    "algo_rating": 2530,
+    "games_played": 932,
+    "win_percentage": 80.26,
     "creator": "User: XYG",
     "algo_link": "https://bcverdict.github.io/?id=234436"
   },
@@ -108,6 +108,15 @@
     "algo_link": "https://bcverdict.github.io/?id=220088"
   },
   {
+    "algo_id": 238427,
+    "algo_name": "Firestarter2",
+    "algo_rating": 2326,
+    "games_played": 17,
+    "win_percentage": 100.0,
+    "creator": "Team: Alphago-Terminal",
+    "algo_link": "https://bcverdict.github.io/?id=238427"
+  },
+  {
     "algo_id": 240289,
     "algo_name": "kummm",
     "algo_rating": 2277,
@@ -124,15 +133,6 @@
     "win_percentage": 78.49,
     "creator": "User: dfl",
     "algo_link": "https://bcverdict.github.io/?id=227441"
-  },
-  {
-    "algo_id": 239804,
-    "algo_name": "Firestarter4",
-    "algo_rating": 2261,
-    "games_played": 19,
-    "win_percentage": 84.21,
-    "creator": "Team: Alphago-Terminal",
-    "algo_link": "https://bcverdict.github.io/?id=239804"
   },
   {
     "algo_id": 250137,
@@ -189,6 +189,15 @@
     "algo_link": "https://bcverdict.github.io/?id=240523"
   },
   {
+    "algo_id": 239939,
+    "algo_name": "switch-two",
+    "algo_rating": 2078,
+    "games_played": 12,
+    "win_percentage": 91.67,
+    "creator": "Team: mi7",
+    "algo_link": "https://bcverdict.github.io/?id=239939"
+  },
+  {
     "algo_id": 239355,
     "algo_name": "stop-feeding3",
     "algo_rating": 2065,
@@ -196,15 +205,6 @@
     "win_percentage": 65.22,
     "creator": "Team: The Eleemosynary Engineers",
     "algo_link": "https://bcverdict.github.io/?id=239355"
-  },
-  {
-    "algo_id": 239939,
-    "algo_name": "switch-two",
-    "algo_rating": 2045,
-    "games_played": 15,
-    "win_percentage": 80.0,
-    "creator": "Team: mi7",
-    "algo_link": "https://bcverdict.github.io/?id=239939"
   },
   {
     "algo_id": 240677,
@@ -270,6 +270,15 @@
     "algo_link": "https://bcverdict.github.io/?id=238709"
   },
   {
+    "algo_id": 240572,
+    "algo_name": "python-summer-support",
+    "algo_rating": 1863,
+    "games_played": 13,
+    "win_percentage": 76.92,
+    "creator": "Team: Terminalator",
+    "algo_link": "https://bcverdict.github.io/?id=240572"
+  },
+  {
     "algo_id": 238588,
     "algo_name": "dm-copy",
     "algo_rating": 1844,
@@ -277,15 +286,6 @@
     "win_percentage": 40.0,
     "creator": "Team: ramen2",
     "algo_link": "https://bcverdict.github.io/?id=238588"
-  },
-  {
-    "algo_id": 240612,
-    "algo_name": "python-summer-support",
-    "algo_rating": 1832,
-    "games_played": 14,
-    "win_percentage": 57.14,
-    "creator": "Team: Terminalator",
-    "algo_link": "https://bcverdict.github.io/?id=240612"
   },
   {
     "algo_id": 240328,
@@ -333,13 +333,13 @@
     "algo_link": "https://bcverdict.github.io/?id=237627"
   },
   {
-    "algo_id": 239348,
+    "algo_id": 239353,
     "algo_name": "janna_v2",
-    "algo_rating": 1743,
-    "games_played": 30,
-    "win_percentage": 63.33,
+    "algo_rating": 1748,
+    "games_played": 23,
+    "win_percentage": 65.22,
     "creator": "Team: RIVER KINGs",
-    "algo_link": "https://bcverdict.github.io/?id=239348"
+    "algo_link": "https://bcverdict.github.io/?id=239353"
   },
   {
     "algo_id": 238249,
@@ -387,13 +387,13 @@
     "algo_link": "https://bcverdict.github.io/?id=238355"
   },
   {
-    "algo_id": 238065,
-    "algo_name": "CS101 v1",
-    "algo_rating": 1631,
-    "games_played": 111,
-    "win_percentage": 50.45,
+    "algo_id": 238063,
+    "algo_name": "0 v1",
+    "algo_rating": 1633,
+    "games_played": 68,
+    "win_percentage": 41.18,
     "creator": "User: YL01",
-    "algo_link": "https://bcverdict.github.io/?id=238065"
+    "algo_link": "https://bcverdict.github.io/?id=238063"
   },
   {
     "algo_id": 237847,
@@ -432,13 +432,13 @@
     "algo_link": "https://bcverdict.github.io/?id=239869"
   },
   {
-    "algo_id": 237989,
+    "algo_id": 238552,
     "algo_name": "fort",
-    "algo_rating": 1474,
+    "algo_rating": 1487,
     "games_played": 79,
-    "win_percentage": 49.37,
+    "win_percentage": 48.1,
     "creator": "User: eh270",
-    "algo_link": "https://bcverdict.github.io/?id=237989"
+    "algo_link": "https://bcverdict.github.io/?id=238552"
   },
   {
     "algo_id": 238849,

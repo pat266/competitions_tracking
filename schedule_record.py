@@ -18,8 +18,8 @@ class ScheduleRecord:
         # path
         self.dir_path = "./data"
         # name of the files (i.e. team_leaderboard.json)
-        self.team_file_name = "all_algos_leaderboard"
-        self.algos_file_name = "unique_algos_team_leaderboard"
+        self.team_file_name = "team_leaderboard"
+        self.algos_file_name = "algos_leaderboard"
 
         # change this to get the information of a different competition
         self.competitionId = 297
@@ -65,7 +65,7 @@ class ScheduleRecord:
                 )
                 # update the old team leaderboard with the new one
                 new_team_leaderboard = tracker.update_algos_dict(
-                    old_team_leaderboard, new_team_leaderboard
+                    old_team_leaderboard, new_team_leaderboard, get_unique=True
                 )
             # sort it by elo
             new_team_leaderboard = tracker.sort_algos_dict(
@@ -84,7 +84,7 @@ class ScheduleRecord:
             )
 
             """
-            These methods are used to get the team highest elo algorithm
+            These methods are used to get all algorithms in the competition
             """
             # var for time before
             before = time.perf_counter()
@@ -103,7 +103,7 @@ class ScheduleRecord:
                 )
                 # update the old team leaderboard with the new one
                 new_algos_leaderboard = tracker.update_algos_dict(
-                    old_algos_leaderboard, new_algos_leaderboard, get_unique=True
+                    old_algos_leaderboard, new_algos_leaderboard
                 )
             # sort it by elo
             new_algos_leaderboard = tracker.sort_algos_dict(
