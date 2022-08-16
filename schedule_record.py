@@ -65,7 +65,7 @@ class ScheduleRecord:
                 )
                 # update the old team leaderboard with the new one
                 new_team_leaderboard = tracker.update_algos_dict(
-                    old_team_leaderboard, new_team_leaderboard
+                    old_team_leaderboard, new_team_leaderboard, get_unique=True
                 )
             # sort it by elo
             new_team_leaderboard = tracker.sort_algos_dict(
@@ -82,8 +82,9 @@ class ScheduleRecord:
                     after - before
                 )
             )
+
             """
-            These methods are used to get the team highest elo algorithm
+            These methods are used to get all algorithms in the competition
             """
             # var for time before
             before = time.perf_counter()
@@ -120,8 +121,10 @@ class ScheduleRecord:
                     after - before
                 )
             )
-        except Exception:
-            self.logger.error(Exception)
+        except Exception as e:
+            self.logger.error(
+                "Exception at schedule_get_algorithms_competition(): " + str(e)
+            )
 
 
 if __name__ == "__main__":
@@ -131,6 +134,6 @@ if __name__ == "__main__":
     while True:
         try:
             schedule.run_pending()
-        except Exception:
-            schedule.logger.error(Exception)
+        except Exception as e:
+            schedule.logger.error("Exception at run_pending(): " + str(e))
         time.sleep(1)
