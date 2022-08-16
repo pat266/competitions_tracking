@@ -109,24 +109,11 @@ def get_team_leaderboard(competitionId=297):
     Method to only display the best algorithm per team/user
     """
     algos = get_competition_algorithms(competitionId=competitionId)
-    algos = sorted(algos, key=lambda x: x["algo_rating"], reverse=True)
-    # a dict of team/user
-    author = {}
-    # a list of index to be deleted
-    deleted_indices = []
-    for i in range(len(algos)):
-        if algos[i]["creator"] not in author.keys():
-            author.update({algos[i]["creator"]: "author"})
-        else:
-            deleted_indices.append(i)
-
-    for index in reversed(deleted_indices):
-        del algos[index]
-
-    return algos
+    algos = sort_algos_dict(algos)
+    return get_unique_team_algorithm(algos)
 
 
-def update_algos_dict(old_dict_algos, new_dict_algos):
+def update_algos_dict(old_dict_algos, new_dict_algos, get_unique=False):
     """
     Method to update the list of algorithms
     """
@@ -144,6 +131,11 @@ def update_algos_dict(old_dict_algos, new_dict_algos):
         # add the dictionary into the list if it is new algorithm
         else:
             old_dict_algos.append(new_dict_algos[i])
+
+    old_dict_algos = sort_algos_dict(old_dict_algos)
+    if get_unique:
+        # only include unique team algorithms
+        old_dict_algos = get_unique_team_algorithm(old_dict_algos)
     return old_dict_algos
 
 
@@ -174,4 +166,33 @@ def import_algos(dir_path, base_filename, filename_suffix="json"):
     path = os.path.join(dir_path, base_filename + "." + filename_suffix)
     with open(path, "r") as final:
         algos = json.load(final)
+    return algos
+
+
+def merge_algos(algos1, algos2):
+    """
+    Merge two lists of dictionaries algorithms
+    """
+    for algo in algos2:
+        algos1.append(algo)
+    return algos1
+
+
+def get_unique_team_algorithm(algos):
+    """
+    Get the unique algorithm per team
+    """
+    # a dict of team/user
+    author = {}
+    # a list of index to be deleted
+    deleted_indices = []
+    for i in range(len(algos)):
+        if algos[i]["creator"] not in author.keys():
+            author.update({algos[i]["creator"]: "author"})
+        else:
+            deleted_indices.append(i)
+
+    for index in reversed(deleted_indices):
+        del algos[index]
+
     return algos

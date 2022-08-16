@@ -18,8 +18,8 @@ class ScheduleRecord:
         # path
         self.dir_path = "./data"
         # name of the files (i.e. team_leaderboard.json)
-        self.team_file_name = "team_leaderboard"
-        self.algos_file_name = "algos_leaderboard"
+        self.team_file_name = "all_algos_leaderboard"
+        self.algos_file_name = "unique_algos_team_leaderboard"
 
         # change this to get the information of a different competition
         self.competitionId = 297
@@ -82,6 +82,7 @@ class ScheduleRecord:
                     after - before
                 )
             )
+
             """
             These methods are used to get the team highest elo algorithm
             """
@@ -102,7 +103,7 @@ class ScheduleRecord:
                 )
                 # update the old team leaderboard with the new one
                 new_algos_leaderboard = tracker.update_algos_dict(
-                    old_algos_leaderboard, new_algos_leaderboard
+                    old_algos_leaderboard, new_algos_leaderboard, get_unique=True
                 )
             # sort it by elo
             new_algos_leaderboard = tracker.sort_algos_dict(
@@ -120,8 +121,10 @@ class ScheduleRecord:
                     after - before
                 )
             )
-        except Exception:
-            self.logger.error(Exception)
+        except Exception as e:
+            self.logger.error(
+                "Exception at schedule_get_algorithms_competition(): " + str(e)
+            )
 
 
 if __name__ == "__main__":
@@ -131,6 +134,6 @@ if __name__ == "__main__":
     while True:
         try:
             schedule.run_pending()
-        except Exception:
-            schedule.logger.error(Exception)
+        except Exception as e:
+            schedule.logger.error("Exception at run_pending(): " + str(e))
         time.sleep(1)
